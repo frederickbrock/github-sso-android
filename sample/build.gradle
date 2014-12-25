@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId 'com.hwrdprkns.githubsso.sample'
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName project.VERSION_NAME
+
+        // Both of these fields are in a project.properties file
+        // which is .gitignored for security. Enter your own values here.
+        resValue "string", "github_id", APP_ID
+        resValue "string", "github_secret", APP_SECRET
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.jakewharton:butterknife:6.0.0'
+    compile project(':library')
+}
