@@ -1,13 +1,8 @@
 Github Single Sign On
 =====================
 
-This is a small library to help you facilitate Github sign in within your app. Run the sample app to get a taste of what this looks like.
+Added travis CI and maven deploy features to make it easier to include the library in your projects.
 
-TODO:
-  - Upload aar to maven for easy inclusion in other apps
-  - Make a GithubSSO Fragment.
-  - Backport to lower level API versions (but not really, because not worth it).
-  - Make a PR to the Github Android app to take care of this if the user has the app installed.
 
 License
 -------
