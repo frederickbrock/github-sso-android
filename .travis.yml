@@ -4,6 +4,7 @@ jdk: oraclejdk7
 cache: false
 # Use the Travis Container-Based Infrastructure
 sudo: false
+script: "./gradlew build"
 env:
   global:
     - ANDROID_API_LEVEL=21
