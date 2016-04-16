@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
     defaultConfig {
         applicationId 'com.hwrdprkns.githubsso.sample'
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 21
         versionCode Integer.parseInt(project.VERSION_CODE)
         versionName project.VERSION_NAME
@@ -26,7 +26,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:appcompat-v7.23+'
     compile 'com.jakewharton:butterknife:6.0.0'
     compile project(':library')
 }
